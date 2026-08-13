@@ -14,12 +14,17 @@ public class Ponto {
         this.y = valY;
     }
 
+    public Ponto (Ponto pt){
+        x = pt.x;
+        y = pt.y;
+    }
+
     public void setXY(double valX, double valY) {
-        if (valX >= 0 && valY >= 0) {
-            x = valX;
-            y = valY;
-            System.out.println("X: " + x + "Y: " + y);
-        }
+        
+        x = valX;
+        y = valY;
+        System.out.println("X: " + x + "Y: " + y);
+        
     }
 
     public double getX() {
@@ -28,6 +33,11 @@ public class Ponto {
 
     public double getY() {
         return y;
+    }
+
+    public void assign (Ponto pt){
+        x = pt.x;
+        y = pt.y;
     }
 
     public double deltaX(double vX) {
@@ -39,34 +49,23 @@ public class Ponto {
     }
 
     public double distance(double posX, double posY) {
-        double disX = deltaX(posX); //10
-        double disY = deltaY(posY); // 8
-
-        System.out.println("DisX elevado a 2: " + (Math.pow(disX, 2)));
-        System.out.println("DisY elevado a 2: " + (Math.pow(disY, 2)));
+        double disX = deltaX(posX); 
+        double disY = deltaY(posY); 
 
         return Math.sqrt((Math.pow(disX, 2)) + (Math.pow(disY, 2)));
     }
 
     public void desloc(double dX, double dY) {
-        System.out.println("-----------DESLOC---------------");
-        System.out.println("Coordenada X anterior: " + x);
-        System.out.println("Coordenada Y anterior: " + y);
         x += dX;
         y += dY;
-        System.out.println("Coordenada X: " + x);
-        System.out.println("Coordenada Y: " + y);
-        System.out.println("\n");
     }
 
     public void escale(double factor) {
-        System.out.println("-------------ESCALE------------");
-        System.out.println("Coordenada X anterior: " + x);
-        System.out.println("Coordenada Y anterior: " + y);
         x *= factor;
         y *= factor;
-        System.out.println("Coordenada X: " + x);
-        System.out.println("Coordenada Y: " + y);
-        System.out.println("\n");
+    }
+
+    public void print(){
+        System.out.println("{" + x + ", " + y  + "}");
     }
 }

@@ -16,32 +16,18 @@ public class Cartesiano {
     
      */
     public static void main(String[] args) {
-        Ponto pt = new Ponto(2,2);
-        Ponto ptPadrao = new Ponto();
-        
-        System.out.println("------------------ PT ATRIBUIDO -----------------------");
-        
-        System.out.println("Delta X calculado: " + pt.deltaX(10));
-        System.out.println("Delta X calculado: " + pt.deltaY(5));
-        System.out.println("\n");
-        System.out.println("Distancia calculada: " + pt.distance(10, 5));
-        pt.desloc(10, 3);
-        pt.escale(1.54);
-        System.out.println("\n");
-        
-        
-        System.out.println("------------------ PT PADRAO -----------------------");;;
-         
-        System.out.println("X Construtor padrao: " + ptPadrao.getX());
-        System.out.println("Y Construtor padrao: " + ptPadrao.getY());
-        ptPadrao.setXY(5,5);
-        System.out.println("\n");
-        System.out.println("Delta X calculado: " + ptPadrao.deltaX(5));
-        System.out.println("Delta X calculado: " + ptPadrao.deltaY(19));
-        System.out.println("\n");
-        System.out.println("Distancia calculada: " + ptPadrao.distance(5, 3));
-        ptPadrao.desloc(10, 3);
-        ptPadrao.escale(1.50); 
+        Ponto p1 = new Ponto(10, 20);
+        Ponto p2 = new Ponto();
+        Ponto p3 = new Ponto(p1);
+
+        p1.print();
+        p2.print();
+        p3.print();
+
+        p2.desloc(5,1);
+        p2.print();
+        p2.escale(2);
+        p2.print();
     }
 
 }
