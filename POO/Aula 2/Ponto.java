@@ -2,7 +2,8 @@ package cartesiano;
 
 public class Ponto {
 
-    private double x, y;
+    private double x;
+    private double y;
 
     public Ponto() {
         this.x = 0;
