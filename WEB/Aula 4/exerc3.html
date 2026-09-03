@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Luan Henrique Ferreira Pinto, RA 0040482512001 -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulário - Exercício 3</title>
+</head>
+
+<body>
+    <div style="width:35vw">
+
+
+        <h1 align="center">Escola Virtual</h1>
+        <h2 align="center">Formulário de Pré-Matrícula</h2>
+
+        <hr>
+
+        <fieldset>
+            <legend><strong>Dados Pessoais:</strong></legend>
+
+            <table>
+                <tr>
+                    <td align="right">Nome do Aluno:</td>
+                    <td>
+                        <input type="text" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Nascimento (dd/mm/aaaa):</td>
+                    <td>
+                        <input type="text" size="2"> /
+                        <input type="text" size="2"> /
+                        <input type="text" size="6">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Nome da Mãe:</td>
+                    <td>
+                        <input type="text" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Nome do Pai:</td>
+                    <td>
+                        <input type="text" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Telefone:</td>
+                    <td>
+                        DDD <input type="text" size="3">
+                        Tel <input type="text" size="8">
+                        Ramal: <input type="text" size="3">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">E-Mail:</td>
+                    <td>
+                        <input type="text" size="30">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Informações de Matrícula:</strong></legend>
+
+            <table width="100%">
+                <tr>
+                    <td valign="top">
+                        Série:<br>
+
+                        <select>
+                            <option>pré-escolar</option>
+                            <option>1ª série</option>
+                            <option>2ª série</option>
+                            <option>3ª série</option>
+                        </select>
+                    </td>
+
+                    <td valign="top">
+                        Turno:<br>
+
+                        <input type="radio" name="turno">Manhã<br>
+                        <input type="radio" name="turno">Tarde
+                    </td>
+
+                    <td valign="top">
+                        Atividades Extracurriculares:<br>
+
+                        <input type="checkbox">Informática<br>
+                        <input type="checkbox">Música<br>
+                        <input type="checkbox">Balet<br>
+                        <input type="checkbox">Pintura<br>
+                        <input type="checkbox">Judô<br>
+                        <input type="checkbox">Futebol
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <br>
+
+        <div align="center">
+            <input type="submit" value="Envia Formulário">
+            <input type="reset" value="Limpa Campos">
+        </div>
+    </div>
+</body>
+
+</html>
