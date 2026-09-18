@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 27</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        /* Cabeçalho usando Flexbox */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #3498db;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Página</h1>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="card">Conteúdo 1</div>
+        <div class="card">Conteúdo 2</div>
+        <div class="card">Conteúdo 3</div>
+        <div class="card">Conteúdo 4</div>
+        <div class="card">Conteúdo 5</div>
+        <div class="card">Conteúdo 6</div>
+
+    </main>
+
+    <footer>
+        <p>Rodapé da página</p>
+    </footer>
+
+</body>
+
+</html>

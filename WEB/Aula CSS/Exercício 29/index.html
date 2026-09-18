@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 29</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: white;
+            color: #222;
+
+            padding: 40px;
+
+            transition: 0.3s;
+        }
+
+        h1 {
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            background-color: #333;
+            color: white;
+
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+
+        .dark-mode h1 {
+            color: #5dade2;
+        }
+
+        .dark-mode button {
+            background-color: white;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Minha Página</h1>
+
+    <p>
+        Clique no botão para alterar entre o tema claro e o tema escuro.
+    </p>
+
+    <br>
+
+    <button onclick="modoEscuro()">
+        Alterar tema
+    </button>
+
+    <script>
+        function modoEscuro() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+
+</html>

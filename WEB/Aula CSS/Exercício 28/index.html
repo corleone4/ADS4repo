@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 28</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+
+            border: 8px solid #ddd;
+            border-top: 8px solid #3498db;
+
+            border-radius: 50%;
+
+            animation: carregar 1s linear infinite;
+        }
+
+        @keyframes carregar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loader"></div>
+
+</body>
+
+</html>
