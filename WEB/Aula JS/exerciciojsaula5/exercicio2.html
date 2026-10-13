@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <script>
+        const novoItem = document.createElement("li");
+        novoItem.textContent = "Item 3";
+
+        const lista = document.getElementById("lista");
+        lista.appendChild(novoItem);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <nav>
+        <button data-secao="inicio">Início</button>
+        <button data-secao="sobre">Sobre</button>
+        <button data-secao="contato">Contato</button>
+    </nav>
+
+    <main id="conteudo">
+        <h2>Início</h2>
+        <p>página inicial</p>
+    </main>
+
+    <script>
+        const conteudo = document.getElementById("conteudo");
+        const botoes = document.querySelectorAll("nav button");
+
+        const secoes = {
+            inicio: "<h2>Início</h2><p>página inicial</p>",
+            sobre: "<h2>Sobre</h2><p>Esta é a seção sobre nós.</p>",
+            contato: "<h2>Contato</h2><p>Entre em contato conosco!</p>"
+        };
+
+        botoes.forEach(function(botao) {
+            botao.addEventListener("click", function() {
+                const secao = botao.dataset.secao;
+                conteudo.innerHTML = secoes[secao];
+            });
+        });
+    </script>
+</body>
+</html>

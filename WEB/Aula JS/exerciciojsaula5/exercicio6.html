@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 6</title>
+</head>
+<body>
+    <img
+        id="imagem"
+        src="https://placehold.co/300x150/2563eb/ffffff?text=Imagem+1"
+        alt="Imagem 1"
+        width="300"
+    >
+
+    <button id="botao">Trocar imagem</button>
+
+    <script>
+        const imagem = document.getElementById("imagem");
+        const botao = document.getElementById("botao");
+
+        botao.addEventListener("click", function() {
+            imagem.setAttribute(
+                "src",
+                "https://placehold.co/300x150/16a34a/ffffff?text=Imagem+2"
+            );
+
+            imagem.setAttribute("alt", "Imagem 2");
+        });
+    </script>
+</body>
+</html>
