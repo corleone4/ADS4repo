@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de Atividades</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Gerenciamento de Atividades</h1>
+
+        <form class="form-row">
+          <input type="text" id="nome-atividade" placeholder="Nome da atividade" />
+          <select id="status-atividade">
+            <option value="Selecione">Selecione</option>
+            <option value="pendente">Pendente</option>
+            <option value="em-andamento">Em andamento</option>
+            <option value="concluida">Concluída</option>
+          </select>
+          <select id="prioridade-atividade">
+            <option value="Selecione">Selecione</option>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+          </select>
+          <button type="button" onclick="adicionarAtividade()">Adicionar</button>
+        </form>
+
+        <div class="stats">
+          <div class="stat">
+            Total
+            <strong id="total">0</strong>
+          </div>
+          <div class="stat">
+            Pendentes
+            <strong id="pendentes">0</strong>
+          </div>
+          <div class="stat">
+            Concluídas
+            <strong id="concluidas">0</strong>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Atividade</th>
+              <th>Status</th>
+              <th>Prioridade</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tBody">
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
