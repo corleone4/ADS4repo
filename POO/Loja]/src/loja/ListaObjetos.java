@@ -47,7 +47,7 @@ public class ListaObjetos {
                 valorTotal += lista[i].getPrice() * lista[i].getUnits();
             }
         }
-        System.out.println("Valor total de estoque");
+        System.out.println("Valor total de estoque: " + valorTotal);
     }
 
 }
